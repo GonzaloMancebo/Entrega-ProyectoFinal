@@ -1,0 +1,83 @@
+@import "variable";
+
+aside {
+  grid-area: aside;
+  .aside_emoji {
+    border-radius: 7px;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    animation: myfirst 5s linear 2s infinite alternate;
+  }
+
+  @keyframes myfirst {
+    0% {
+      background-color: rgb(255, 0, 0);
+      left: 0px;
+      top: 0px;
+    }
+    25% {
+      background-color: rgb(255, 255, 255);
+      left: 500px;
+      top: 0px;
+    }
+    50% {
+      background-color: rgb(255, 0, 0);
+      left: 100px;
+      top: 200px;
+    }
+    75% {
+      background-color: rgb(255, 255, 255);
+      left: 0px;
+      top: 100px;
+    }
+    100% {
+      background-color: rgb(255, 0, 0);
+      left: 0px;
+      top: 0px;
+    }
+  }
+}
+
+.text_p {
+  box-sizing: border-box;
+  margin-top: 100px;
+  width: 400px;
+  height: 400px;
+
+  p {
+    margin-top: 50px;
+    color: map-get($colors, "negro");
+    font-size: map-get($tamaños, "font-p");
+  }
+}
+.iconos {
+  height: 50px;
+  right: 100px;
+  width: 600px;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    li {
+      list-style: none;
+      width: 120px;
+      height: 120px;
+      margin: 0 20px;
+      border: 2px solid black;
+      border-radius: 50%;
+      transition: all 0.5s;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        font-size: 48px;
+        color: rgb(108, 114, 56);
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "variable";
+
+header {
+  grid-area: header;
+  height: 200px;
+  background-color: map-get($colors, "negro");
+nav{
+  div{
+    ul{
+      li{
+        a{
+          font-size: map-get($tamaños,"font-p" ) ;
+        }
+      }
+    }
+  }
+}
+  h1 {
+    color: map-get($colors, "blanco");
+    font-size: map-get($tamaños, "font-h1");
+  }
+  .conteiner_menu {
+    position: sticky;
+    top: 0;
+  }
+}
